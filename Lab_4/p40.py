@@ -1,0 +1,1 @@
+print(open("C:\\Users\\ASUS\\Documents\\GitHub\\4CP50_Python_Programming\\Lab_4\\test.txt", "r").read())
