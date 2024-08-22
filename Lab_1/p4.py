@@ -3,7 +3,12 @@ import math
 a, b, c = map(float, input("Enter a, b, c: ").split())
 d = b**2 - 4*a*c
 msg = "The roots are {}"
-print(msg.format("real and distinct.")) if d > 0 else print(msg.format("real and equal.")) if d == 0 else print(msg.format("complex and distinct."))
+if d > 0:
+    print(msg.format("real and distinct."))
+elif d == 0:
+    print(msg.format("real and equal."))
+else:
+    print(msg.format("complex and distinct."))
 if d >= 0:
     print(f"Root 1 = {(-b + math.sqrt(d)) / (2*a)}")
     if d > 0:

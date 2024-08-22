@@ -1,4 +1,5 @@
 decimal = 12
+org = decimal
 
 binary = ""
 while decimal > 0:
@@ -6,4 +7,4 @@ while decimal > 0:
     binary = str(remainder) + binary
     decimal //= 2
 
-print(f"The binary representation of {decimal} is: {binary}")
+print(f"The binary representation of {org} is: {binary}")
